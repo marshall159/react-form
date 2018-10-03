@@ -31,14 +31,16 @@ class App extends Component {
                 return i !== index;
             })
         });
-       
     }
 
     render() {
 
         return(
             <div className="container">
-                <Table characterData={characters} />
+                <Table 
+                    characterData={this.state.characters} 
+                    removeCharacter={this.removeCharacter}
+                />
             </div>
         )
     }
