@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
 
+const TableHeader = () => {
+    return (
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Job</th>
+            </tr>
+        </thead>
+    );
+}
+
+const TableBody = () => {
+    return (
+        <tbody>
+            <tr>
+                <td>Scarlett</td>
+                <td>Actress</td>
+            </tr>
+            <tr>
+                <td>Aneel</td>
+                <td>Developer</td>
+            </tr>
+        </tbody>
+    );
+}
+
 class Table extends Component {
     render() {
-        return(
+        return (
             <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Job</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Scarlett</td>
-                        <td>Actress</td>
-                    </tr>
-                    <tr>
-                        <td>Aneel</td>
-                        <td>Developer</td>
-                    </tr>
-                </tbody>
+                <TableHeader />
+                <TableBody />
             </table>
         );
     }
